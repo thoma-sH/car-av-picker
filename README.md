@@ -129,16 +129,6 @@ car-av-picker/
 Products are modelled as a **discriminated union** — `Speaker | Amplifier`, keyed on a
 `category` field — so each variant carries only the specs that make sense for it and a
 speaker can't accidentally have an amplifier's channel count.
-
-## Roadmap
-
-- [x] Workspace scaffold and TypeScript config
-- [x] Product types and in-memory catalog
-- [x] `GET /api/products` with filtering, `GET /api/products/:slug`
-- [ ] Spec-derived SQ and SPL scoring
-- [ ] Goal input — budget, SQ/SPL weighting, amperage ceiling
-- [ ] Per-category recommendations
-- [ ] `POST /api/builds/recommend` — full build generation
 - [ ] Compatibility rules (fitment, impedance, power, channel count)
 - [ ] React frontend
 - [ ] PostgreSQL, replacing the in-memory array
