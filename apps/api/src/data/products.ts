@@ -14,6 +14,8 @@ export type Speaker = BaseProduct & {
     sensitivity: number;
     rmsWatts: number;
     impedanceOhms: number;
+    freqLowHz: number;
+    freqHighHz: number;
     mountingDepth: number;
 }
 
